@@ -9,6 +9,7 @@
     tools:showIn="@layout/activity_main">
 
     <TextView
+        android:id="@+id/tTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="This is the Splash page"
@@ -16,5 +17,17 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/bShareContentA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tTextView"
+        android:text="Share Content A"/>
+    <Button
+        android:id="@+id/bShareContentB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/bShareContentA"
+        android:text="Share Content B"/>
 
 </android.support.constraint.ConstraintLayout>
